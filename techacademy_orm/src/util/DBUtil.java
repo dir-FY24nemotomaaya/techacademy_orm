@@ -1,7 +1,10 @@
 package util;
 
-public class DBUtil {  //DAOクラスに位置付け
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
+public class DBUtil {
     private static final String PERSISTENCE_UNIT_NAME = "techacademy_orm";
     private static EntityManagerFactory emf;
 
