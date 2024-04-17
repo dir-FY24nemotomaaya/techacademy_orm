@@ -5,12 +5,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity  //DTOクラスに位置付け
+@Entity  //DTOクラス(取得したデータを保持)
 @Table(name="city")
-public class City {
+public class City {  //cityテーブルをCityクラスにマッピング
     // プロパティ
-    @Id
-    @Column(name = "ID")
+    @Id  //今回はIDを主キーとする
+    @Column(name = "ID")  //IDカラムをメンバ変数idにマッピング
     private Integer id;
 
     @Column(name = "Name")
