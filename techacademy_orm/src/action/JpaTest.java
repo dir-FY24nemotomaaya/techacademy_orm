@@ -13,6 +13,7 @@ public class JpaTest {
 
         // 1件取得して名前を表示する
         City city = em.find(City.class, 1);
+        //Find()メソッドでテーブル内のIDを用いて検索する
         System.out.println(city.getName());
 
         // EntityManagerの利用を終了する

@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+@Entity  //DTOクラスに位置付け
 @Table(name="city")
 public class City {
     // プロパティ
